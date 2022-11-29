@@ -1,0 +1,186 @@
+body {
+    padding: 50px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 14px 30px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #0e0e0e57;
+}
+
+/* Выбор услуги */
+.serv {
+    position: relative;
+}
+
+.serv__btn {
+    background: #fff;
+    text-align: start;
+    color: #0e0e0e57;
+}
+
+.serv img {
+    position: absolute;
+    top: 16px;
+    right: 37px;
+    cursor: pointer;
+    padding: 7px 5px;
+}
+
+.last {
+    display: none;
+}
+
+.list {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.list p {
+    padding: 20px 30px;
+    border: 1px solid;
+    border-radius: 25px 25px 0 0;
+    cursor: pointer;
+    background: #fff;
+}
+
+.list p:hover {
+    background: #7E99EC;
+    color: #fff;
+}
+
+.list p:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.list p:last-child {
+    border-radius: 0 0 25px 25px;
+    cursor: pointer;
+}
+
+/* Выбор способа связи */
+.call {
+    position: relative;
+}
+
+.call__btn {
+    background: #fff;
+    text-align: start;
+    color: #0e0e0e57;
+}
+
+.call img {
+    position: absolute;
+    top: 16px;
+    right: 37px;
+    cursor: pointer;
+    padding: 7px 5px;
+}
+
+.call__last {
+    display: none;
+}
+
+.call__list {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.call__list p {
+    padding: 20px 30px;
+    border: 1px solid;
+    border-radius: 25px 25px 0 0;
+    cursor: pointer;
+    background: #fff;
+}
+
+.call__list p:hover {
+    background: #7E99EC;
+    color: #fff;
+}
+
+.call__list p:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.call__list p:last-child {
+    border-radius: 0 0 25px 25px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none; /* Запрещаем изменять размер */
+    border-radius: 25px;
+    padding: 14px 30px;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    color: #0e0e0e57;
+}
+
+.file {
+    position: relative;
+    border: 5px dotted #7E99EC;
+    border-radius: 25px;
+    padding: 14px 30px;
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+.file input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.file__btn {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.file__btn_text {
+    color: #7E99EC;
+}
+
+.file__icon {
+    position: absolute;
+    right: 0;
+}
+
+.submit {
+    padding: 15px 30px;
+    background: #7E99EC;
+    color: #fff;
+    border: 1px solid #7E99EC;
+}
+
+.submit:hover {
+    background: #fff;
+    color: #7E99EC;
+}

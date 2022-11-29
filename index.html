@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-xl-5">
+            <div id="result_form" class="text-center"></div>
+            <form id="form" enctype="multipart/form-data" method="post">
+                <div>
+                    <input type="text" name="name" placeholder="Введите ваше имя">
+                </div>
+                <div class="serv">
+                    <input class="serv__btn" type="button" value="Выберите услугу...">
+                    <img class="first" src="img/arrow_down.png" alt="down">
+                    <img class="last" src="img/arrow_up.png" alt="down">
+                    <div class="list">
+                        <p class="list__first">Разработка сайта</p>
+                        <p class="list__second">Чат-бот</p>
+                        <p class="list__last">Дизайн</p>
+                    </div>
+                </div>
+                <div class="call">
+                    <input class="call__btn" type="button" value="Выберете способ связи...">
+                    <img class="call__first" src="img/arrow_down.png" alt="down">
+                    <img class="call__last" src="img/arrow_up.png" alt="down">
+                    <div class="call__list">
+                        <p class="call__list_email">Почта</p>
+                        <p class="call__list_tel">Телефон</p>
+                        <p class="call__list_soc">Мессенджер</p>
+                    </div>
+                </div>
+                <div><textarea name="mess" rows="5" placeholder="Кратко опишите ваш проект..."></textarea></div>
+                <div class="file" >
+                    <input type="file" name="userfile" id="file" class="input file__input" multiple accept="image/*,image/jpeg">
+                    <label for="file" class="file__btn">
+                        <span class="file__btn_text">Прикрепить файл</span>
+                        <span class="file__icon"><img class="file__icon_img" src="img/clip_file.png" alt="upload-file"></span>
+                    </label>
+                </div>
+                <input class="col-6 offset-3 submit" type="submit" id="btn" value="Оставить заявку">
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
